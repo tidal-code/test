@@ -32,18 +32,18 @@ You don't need to download them separately.
 To use the native run button in intelliJ (the little green arrow next to the test name), you need to add a lister to the settings
 
 1. Navigate to Run --> Edit Configurations
-2. Delete all the existing configurations for the tests by using the '-' button on top
-3. Click on Edit Configuration Templates
+2. In the new window, Delete all the existing configurations for the tests by using the '-' button on top
+3. Click on Edit Configuration Templates (Link at the left bottom corner)
 4. From the list of options click on 'TestNG'
 5. Click on Listeners near to the JDK Settings and Parameters
-6. Add testngcore.TestListener to the list of Listeners
+6. Click on '+' and add <b>testngcore.TestListener</b> to the list of Listeners
 
 
 After completing these steps proceed to the next one - Adding Configuration Directory
 
 ### Adding Config Information
 
-In the resources folder, create a new folder named 'META-INF.services'
+In the resources folder, create a new folder named 'META-INF.services'.
 In the folder add a file with the name 'io.qameta.allure.listener.TestLifecycleListener'
 Then add the following into the file 'testngcore.AllureListener'
 
